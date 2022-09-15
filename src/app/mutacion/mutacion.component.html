@@ -1,0 +1,16 @@
+<br><br>
+<div class="container">
+    <div class="card">
+        <h3 class="text-center">Analizar mutaciones en el ADN</h3>
+        <div class="card-body">
+            <h5 class="text-center">Por favor digite su cadena de ADN sin espacion ni puntos, solo con las letras validas</h5>
+            <form [formGroup]="form" (submit)="send()">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Secuencia de ADN</label>
+                  <input type="text" class="form-control" id="secuenciaAdn" formControlName="cadenaAdn">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
+</div>

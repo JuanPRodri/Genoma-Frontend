@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="card">
+        <h3 class="text-center">Lista de analisis</h3>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Id</th>
+                    <th>CadenaADN</th>
+                    <th>Mutacion</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let analisis of allAnalisis">
+                        <td>{{analisis.id}}</td>
+                        <td>{{analisis.cadenaAdn}}</td>
+                        <td>{{analisis.mutacion}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                <button class="btn btn-primary" (click)="load()">Cargar</button>
+            </p>
+        </div>
+    </div>
+</div>
